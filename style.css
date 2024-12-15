@@ -231,20 +231,22 @@ footer .ctn-btn a:hover{
     text-align: center;
 }
 #section-five .flex-section-five{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
 }
 #section-five .flex-section-five section{
-    padding: 20px;
+    padding: 30px 20px 50px;
     border-radius: 8px;
-    width: 25%;
 }
 #section-five .flex-section-five section h4{
     margin-bottom: 14px;
+    font-size: 25px;
 }
 #section-five .flex-section-five section .text-large{
     margin-bottom: 20px;
+    font-size: 22px;
 }
 #section-five .flex-section-five section ul li{
     list-style-position: inside;
@@ -260,7 +262,7 @@ footer .ctn-btn a:hover{
     box-shadow: 0 0 2px var(--blue);
 }
 #section-five .flex-section-five section .ctn-btn{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 #section-five .flex-section-five section .ctn-btn a{
@@ -270,6 +272,10 @@ footer .ctn-btn a:hover{
     color: var(--blue);
 }
 #section-five .flex-section-five section .ctn-btn a:hover{
+    background-color: var(--blue);
+    color: #fff;
+}
+#section-five .flex-section-five section .ctn-btn a.active{
     background-color: var(--blue);
     color: #fff;
 }
@@ -369,5 +375,20 @@ footer p{
     #section-six h1,
     #section-six figure figcaption{
         text-align: left;
+    }
+    #section-five .flex-section-five{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    #section-five .flex-section-five{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        gap: 30px;
     }
 }

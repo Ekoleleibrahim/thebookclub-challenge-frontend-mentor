@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+}
+
+:root{
+    --blue: #12355B;
+    --orange: #E67845;
+    --blue_claire: #12355b60;
+    --orange_claire: #e678452f;
+}
+
+h1{
+    font-size: 2.2em;
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 1.1em;
+    color: var(--blue);
+    margin-top: 12px;
+}
+
+ul{
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flex{
+    display: flex;
+    gap: 5px;
+}
+
+.flex-stars{
+    gap: 10px;
+    color: var(--orange);
+    margin-bottom: 5px;
+}
+
+.flex-stars i{
+    color: var(--orange);
+}
+
+header{
+    padding: 20px 80px;
+}
+header h1{
+    color: var(--blue);
+    font-size: 23px;
+}
+
+p{
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#section-accueil,
+#section-two,
+#section-three,
+#section-for,
+#section-six,
+#section-five{
+    padding: 80px 50px 100px 80px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+#section-accueil h1{
+    margin-bottom: 12px;
+    font-size: 4em;
+    line-height: 1;
+    color: var(--blue);
+}
+#section-accueil .linear{
+    color: transparent;
+    background: linear-gradient(to right, var(--orange),var(--blue));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#section-accueil p{
+    color: var(--blue);
+    max-width: 650px;
+}
+.content-create{
+    position: relative;
+}
+.content-create::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--blue);
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.banniers{
+    height: 500px;
+}
+
+#section-accueil .ctn-btn,
+footer .ctn-btn{
+    margin: 24px 0;
+}
+
+#section-accueil .ctn-btn a,
+footer .ctn-btn a{
+    text-decoration: none;
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid var(--blue);
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+#section-accueil .ctn-btn a:hover{
+    background-color: var(--blue);
+    color: white;
+}
+footer .ctn-btn a{
+    background-color: var(--blue);
+    color: #fff;
+    border: 2px solid #fff;
+}
+footer .ctn-btn a:hover{
+    background-color: white;
+    color: var(--blue);
+}
+.ctn-others{
+    margin-top: 24px;
+}
+.image-others{
+    display: flex;
+    align-items: center;
+}
+.image-others div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+#section-two .grid section{
+    padding: 50px 0 0 50px;
+}
+#section-two .grid section ul{
+    margin-bottom: 30px;
+}
+#section-two .grid section ul li{
+    margin-bottom: 16px;
+    line-height: 1.4;
+    color: var(--blue);
+}
+
+#section-three .grid section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#section-three section span.circle{
+    position: relative;
+}
+#section-three section span.circle::after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--orange);
+    position: absolute;
+    left: 0;
+    right: 80px;
+    bottom: 0;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+
+#section-for .background{
+    background: linear-gradient(to bottom right, var(--orange_claire),var(--orange_claire), var(--blue_claire));
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+#section-for .background h1{
+    text-align: center;
+}
+#section-for .flex-for{
+    justify-content: space-evenly;
+}
+#section-for .flex-for .numbers{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 5px 14px;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+}
+
+#section-six .text-center,
+#section-six h1,
+#section-six figure figcaption{
+    text-align: center;
+    color: var(--blue);
+}
+
+#section-five h1{
+    text-align: center;
+}
+#section-five .flex-section-five{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#section-five .flex-section-five section{
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%;
+}
+#section-five .flex-section-five section h4{
+    margin-bottom: 14px;
+}
+#section-five .flex-section-five section .text-large{
+    margin-bottom: 20px;
+}
+#section-five .flex-section-five section ul li{
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+#section-five .flex-section-five section:nth-child(1){
+    box-shadow: 0 0 2px var(--blue);
+}
+#section-five .flex-section-five section:nth-child(2){
+    background: linear-gradient(to bottom, var(--orange_claire), var(--blue_claire));
+}
+#section-five .flex-section-five section:nth-child(3){
+    box-shadow: 0 0 2px var(--blue);
+}
+#section-five .flex-section-five section .ctn-btn{
+    margin-top: 20px;
+    text-align: center;
+}
+#section-five .flex-section-five section .ctn-btn a{
+    padding: 10px 24px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    color: var(--blue);
+}
+#section-five .flex-section-five section .ctn-btn a:hover{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+
+footer{
+    padding: 50px 80px;
+    background-color: var(--blue);
+    color: #fff;
+}
+footer section{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer section h1{
+    color: white;
+} 
+footer a{
+    color: var(--orange);
+}
+footer p{ 
+    color: #fff;
+}
+
+.image-others{
+    color: #fff;
+}
+
+.flex-footer{
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-footer p{
+    text-align: center;
+}
+.flex-reseau{
+    gap: 10px;
+}
+.flex-reseau div i{
+    font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+    #section-accueil,
+    #section-two,
+    #section-three,
+    #section-for,
+    #section-five,
+    #section-six,
+    footer{
+        padding: 80px 24px 50px;
+    }
+    #section-five h1{
+        text-align: left;
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+        gap: 10px;
+    }
+    .grid-accueil{
+        gap: 50px;
+    }
+    .banniers{
+        height: auto;
+    }
+    .content-create::before{
+        right: 10px;
+        top: 10px;
+    }
+
+    #section-two .grid section{
+        padding: 0;
+        order: -1;
+    }
+    .ctn-others .flex{
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .flex-footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #section-two .grid section ul li{
+        margin-bottom: 10px;
+    }
+    #section-for{
+        display: none;
+    }
+    #section-six .text-center,
+    #section-six h1,
+    #section-six figure figcaption{
+        text-align: left;
+    }
+}

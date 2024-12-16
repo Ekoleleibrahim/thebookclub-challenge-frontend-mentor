@@ -231,6 +231,7 @@ footer .ctn-btn a:hover{
     text-align: center;
 }
 #section-five .flex-section-five{
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3,30%);
     justify-content: center;
@@ -251,6 +252,12 @@ footer .ctn-btn a:hover{
 #section-five .flex-section-five section ul li{
     list-style-position: inside;
     margin-bottom: 10px;
+}
+#section-five .flex-section-five section:hover{
+    border: 2px solid var(--blue);
+    scale: 1.1;
+    transition: all 4s linear;
+    
 }
 #section-five .flex-section-five section:nth-child(1){
     box-shadow: 0 0 2px var(--blue);
@@ -389,5 +396,10 @@ footer p{
         grid-template-columns: 100%;
         justify-content: stretch;
         gap: 30px;
+    }
+    #section-five .flex-section-five section:hover{
+        /* border: 2px solid var(--blue); */
+        box-shadow: 0 0 2px var(--blue), 0 0 2px var(--blue) inset;
+        scale: 1;
     }
 }

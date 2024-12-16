@@ -357,7 +357,6 @@ footer p{
     }
     .ctn-others .flex{
         align-items: center;
-        justify-content: center;
     }
     
 
@@ -388,7 +387,7 @@ footer p{
     #section-five .flex-section-five{
         display: grid;
         grid-template-columns: 100%;
-        justify-content: center;
+        justify-content: stretch;
         gap: 30px;
     }
 }

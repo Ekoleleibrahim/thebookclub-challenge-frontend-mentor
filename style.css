@@ -1,3 +1,4 @@
+/* Selcteurs principales */
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +18,12 @@ body{
     --orange_claire: #e678452f;
 }
 
+.inline-flex{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
 h1{
     font-size: 2.2em;
     color: var(--blue);
@@ -31,6 +38,14 @@ h4{
 
 ul{
     list-style-position: inside;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+li i{
+    color: var(--blue);
 }
 
 a{
@@ -58,12 +73,8 @@ img{
     color: var(--orange);
 }
 
-header{
-    padding: 20px 80px;
-}
-header h1{
-    color: var(--blue);
-    font-size: 23px;
+.position-relative{
+    position: relative;
 }
 
 p{
@@ -80,6 +91,20 @@ p{
 #section-five{
     padding: 80px 50px 100px 80px;
 }
+
+/* Entete du site */
+header{
+    padding: 20px 80px;
+}
+header h1{
+    color: var(--blue);
+    font-size: 23px;
+}
+header h1 .logo img{
+    width: 32px;
+}
+
+/* Section accueil */
 .grid{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -163,7 +188,7 @@ footer .ctn-btn a:hover{
     border-radius: 50%;
 }
 
-
+/* Section Two */
 #section-two .grid section{
     padding: 50px 0 0 50px;
 }
@@ -174,6 +199,19 @@ footer .ctn-btn a:hover{
     margin-bottom: 16px;
     line-height: 1.4;
     color: var(--blue);
+}
+
+/* Section three */
+#section-three .position-absolute{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#section-three .position-absolute img{
+    width: 40px;
+    height: 40px;
 }
 
 #section-three .grid section{
@@ -198,6 +236,7 @@ footer .ctn-btn a:hover{
     transform: rotate(-20deg);
 }
 
+/* Section For */
 #section-for .background{
     background: linear-gradient(to bottom right, var(--orange_claire),var(--orange_claire), var(--blue_claire));
     padding: 40px 30px;
@@ -220,13 +259,7 @@ footer .ctn-btn a:hover{
     border-radius: 4px;
 }
 
-#section-six .text-center,
-#section-six h1,
-#section-six figure figcaption{
-    text-align: center;
-    color: var(--blue);
-}
-
+/* Section Five */
 #section-five h1{
     text-align: center;
 }
@@ -287,7 +320,17 @@ footer .ctn-btn a:hover{
     color: #fff;
 }
 
+/* Section Six */
+#section-six h1,
+#section-six figure figcaption{
+    text-align: center;
+    color: var(--blue);
+}
+#section-six .flex-stars{
+    justify-content: center;
+}
 
+/* Pied de page */
 footer{
     padding: 50px 80px;
     background-color: var(--blue);
@@ -329,6 +372,8 @@ footer p{
     font-size: 22px;
 }
 
+/* Media queries pour les écrans d'une taille maximale de 1024px  */
+
 @media (max-width: 1024px) {
     #section-accueil,
     #section-two,
@@ -339,8 +384,14 @@ footer p{
     footer{
         padding: 80px 35px 50px;
     }
+    #section-accueil{
+        padding-top: 30px;
+    }
     #section-five h1{
         text-align: left;
+    }
+    header{
+        padding: 35px;
     }
 
     .grid{
@@ -377,7 +428,6 @@ footer p{
     #section-for{
         display: none;
     }
-    #section-six .text-center,
     #section-six h1,
     #section-six figure figcaption{
         text-align: left;
@@ -390,6 +440,7 @@ footer p{
     }
 }
 
+/* Media queries pour les écrans d'une taille maximale de 640px */
 @media (max-width: 640px) {
     #section-accueil,
     #section-two,
@@ -400,6 +451,12 @@ footer p{
     footer{
         padding: 80px 24px 50px;
     }
+    #section-accueil{
+        padding-top: 0;
+    }
+    header{
+        padding: 35px;
+    }
     #section-five .flex-section-five{
         display: grid;
         grid-template-columns: 100%;
@@ -409,5 +466,8 @@ footer p{
     #section-five .flex-section-five section:hover{
         border: 2px solid var(--blue);
         scale: 1;
+    }
+    #section-six .flex-stars{
+        justify-content: start;
     }
 }

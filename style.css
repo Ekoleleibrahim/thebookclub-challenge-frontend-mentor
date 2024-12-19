@@ -256,7 +256,7 @@ footer .ctn-btn a:hover{
 #section-five .flex-section-five section:hover{
     border: 2px solid var(--blue);
     scale: 1.1;
-    transition: all 4s linear;
+    transition: all 600ms linear;
     
 }
 #section-five .flex-section-five section:nth-child(1){
@@ -337,7 +337,7 @@ footer p{
     #section-five,
     #section-six,
     footer{
-        padding: 80px 24px 50px;
+        padding: 80px 35px 50px;
     }
     #section-five h1{
         text-align: left;
@@ -391,6 +391,15 @@ footer p{
 }
 
 @media (max-width: 640px) {
+    #section-accueil,
+    #section-two,
+    #section-three,
+    #section-for,
+    #section-five,
+    #section-six,
+    footer{
+        padding: 80px 24px 50px;
+    }
     #section-five .flex-section-five{
         display: grid;
         grid-template-columns: 100%;
@@ -398,8 +407,7 @@ footer p{
         gap: 30px;
     }
     #section-five .flex-section-five section:hover{
-        /* border: 2px solid var(--blue); */
-        box-shadow: 0 0 2px var(--blue), 0 0 2px var(--blue) inset;
+        border: 2px solid var(--blue);
         scale: 1;
     }
 }

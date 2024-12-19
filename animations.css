@@ -43,7 +43,6 @@ header h1,
     animation-range: entry-crossing;
 }
 #section-three section,
-#section-five,
 #section-six{
     -webkit-animation: section-scale 1.5s linear;
     animation: section-scale 1.8s linear;
@@ -55,6 +54,12 @@ header h1,
     animation: section-rotate 2s linear;
     animation-timeline: view();
     animation-range: entry-crossing;
+}
+#section-five{
+    -webkit-animation: scale-view 2s linear;
+    animation: scale-view 2s linear;
+    animation-timeline: view();
+    animation-range: normal 20%;
 }
 @-webkit-keyframes left-view{
     0%{

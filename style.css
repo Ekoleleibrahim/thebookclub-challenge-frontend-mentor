@@ -156,7 +156,6 @@ footer .ctn-btn a{
     text-decoration: none;
     color: var(--blue);
     text-transform: uppercase;
-    font-size: 17px;
     font-weight: bold;
     border: 2px solid var(--blue);
     padding: 12px 24px;
@@ -449,13 +448,13 @@ footer p{
     #section-five,
     #section-six,
     footer{
-        padding: 80px 24px 50px;
+        padding: 80px 20px 50px;
     }
     #section-accueil{
         padding-top: 0;
     }
     header{
-        padding: 35px;
+        padding: 20px;
     }
     #section-five .flex-section-five{
         display: grid;

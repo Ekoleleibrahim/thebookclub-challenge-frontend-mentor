@@ -49,21 +49,21 @@ header h1,
 #section-six,
 #section-three .position-absolute{
     -webkit-animation: section-scale 1.5s linear;
-    animation: section-scale 1.8s linear;
+    animation: section-scale 1.5s linear;
     animation-timeline: view();
     /* animation-range: entry-crossing; */
     animation-range: entry;
 }
 #section-for{
     -webkit-animation: section-rotate  1.5s linear;
-    animation: section-rotate 2s linear;
+    animation: section-rotate 300ms linear;
     animation-timeline: view();
     /* animation-range: entry-crossing; */
     animation-range: entry;
 }
 #section-five{
     -webkit-animation: scale-view 2s linear;
-    animation: scale-view 2s linear;
+    animation: scale-view 1.5s linear;
     animation-timeline: view();
     /* animation-range: normal 20%; */
     animation-range: entry;
